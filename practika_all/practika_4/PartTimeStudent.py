@@ -16,3 +16,4 @@ class PartTimeStudent(Person):
         print(f"Ім'я: {self.name}")
         print(f"Вік: {self.age}")
         print("Форма навчання: заочна")
+        

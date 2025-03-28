@@ -15,5 +15,3 @@ for student in unversity_students:
         print(f"Загальний бал (очно): {student.total_score()}")
     elif isinstance(student,PartTimeStudent):
         print(f"Загальний бал (заочно): {student.total_score()}")
-        
-        

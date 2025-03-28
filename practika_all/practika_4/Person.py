@@ -14,10 +14,4 @@ class Person():
                 avg_prac = 0
 
             return avg_prac
-
-
-
-
-
-
-
+        
