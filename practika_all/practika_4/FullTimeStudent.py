@@ -14,3 +14,7 @@ class FullTimeStudent(Person):
         
         return S
 
+    def display_info(self):
+        print(f"Ім'я: {self.name}")
+        print(f"Вік: {self.age}")
+        print("Форма навчання: очна")

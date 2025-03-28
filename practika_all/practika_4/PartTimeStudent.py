@@ -11,3 +11,8 @@ class PartTimeStudent(Person):
         S = 0.7 * S_pr + 0.3 * S_ex
         
         return S
+    
+    def display_info(self):
+        print(f"Ім'я: {self.name}")
+        print(f"Вік: {self.age}")
+        print("Форма навчання: заочна")

@@ -7,30 +7,13 @@ student2 = FullTimeStudent("Klavdia Petrivna", 19, 930, 10, 99, 20)
 student3 = PartTimeStudent("Nazar", age=34, prac_score=760, prac_count=10, exam_scr=80)
 student4 = PartTimeStudent("Petrivna", age=22, prac_score=840, prac_count=8, exam_scr=78)
 
-print(f"""
-      Студент 1:
-      Ім'я: {student1.name}
-      Вік: {student1.age}
-      Загальний бал: {student1.total_score()}
-      """)
+unversity_students = [student1,student2,student3,student4]
 
-print(f"""
-      Студент 2:
-      Ім'я: {student2.name}
-      Вік: {student2.age}
-      Загальний бал: {student2.total_score()}
-      """)
-
-print(f"""
-      Студент 3:
-      Ім'я: {student3.name}
-      Вік: {student3.age}
-      Загальний бал: {student3.total_score()}
-      """)
-
-print(f"""
-      Студент 4:
-      Ім'я: {student4.name}
-      Вік: {student4.age}
-      Загальний бал: {student4.total_score()}
-      """)
+for student in unversity_students:
+    student.display_info()
+    if isinstance(student, FullTimeStudent):
+        print(f"Загальний бал (очно): {student.total_score()}")
+    elif isinstance(student,PartTimeStudent):
+        print(f"Загальний бал (заочно): {student.total_score()}")
+        
+        
